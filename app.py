@@ -4,7 +4,7 @@ from evaluate import evaluate
 
 #chatbot apppearance
 st.set_page_config(
-    page_title="ConvoBot",
+    page_title="YokoBot",
     page_icon="computer"
 )
 
@@ -17,9 +17,9 @@ st.sidebar.text("To start the conversation,\nsimply write in your input\nand bot
 #st.header("NLP Chatbot",anchor=None)
 #st.write("This NLP ConvoBot is an NLP conversational chatterbot based on an intents database ")
 
-st.header("Convo-Bot")
+st.header("Yoko-Bot")
 
-
+#st.button("Zagreb")
 
 #code
 if 'generated' not in st.session_state:

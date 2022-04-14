@@ -1,0 +1,5 @@
+streamlit-chat==0.0.2.1
+streamlit==1.8.1
+scikit-learn==1.0.2
+tensorflow==2.8.0
+numpy==1.22.3

@@ -1,0 +1,164 @@
+{
+    "intents": [{
+            "tag": "pozdrav",
+            "patterns": ["hej", "zdravo", "dobar dan", "kako si", "đe si", "gdje si", "ćao", "hej hej", "bokić", "bok", "ej", "oj", "hello", "pozdrav", "ciao"],
+            "responses": ["Dobar dan! Ja sam Yoko-chat-bot! Kako vam mogu pomoći?"]
+        },
+        {
+            "tag": "odzdrav",
+            "patterns": ["doviđenja", "vidimo se", "bok", "odlazim", "u redu, hvala vam", "hvala", "bok", "ciao", "može", "puno hvala"],
+            "responses": ["Doviđenja! Nadam se da sam bila od koristi. Ugodan ostatak dana!"]
+        },
+        {
+            "tag": "svrha",
+            "patterns": ["što si ti", "tko si ti", "koja je tvoja svrha", "što radiš", "što te mogu pitat", "možeš li mi pomoći"],
+            "responses": ["Ja sam Yoko-chatbot. Moja svrha je da vam kažem broj najbližeg komunalnog redarstva ili udruge za zaštitu životinja."]
+        },
+        {
+            "tag": "komunalno",
+            "patterns": ["gdje se nalazi prvo komunalno", "broj skloništa za životinje", "molim vas broj skloništa za žvotinje", "trebam broj od komunalnog redara", "reci mi broj komunalnog redara", "broj od komunalnog", "našao sam izgubljenog psa", "našla sam izgubljenog psa", "našla sam izgubljenu životinju", "našla sam mačku", "našao sam mačku", "našla sam pticu", "našao sam mačiće", "trebam pomoć", "kome se mogu obratiti", "trebam broj od udruge za zaštitu životinja"],
+            "responses": ["Gdje se nalazite?"]
+        },
+        {
+            "tag": "daljnje informacije",
+            "patterns": ["trebate li daljnje informacije za ostale gradove"],
+            "responses": [""]
+        },
+        {
+            "tag": "Zagreb",
+            "patterns": ["Zagreb"],
+            "responses": ["1.odabir: Sklonište za nezbrinute životinje Grad Zagreb: Franjčevićeva ul. 43, 10361, tel: 01/2008354, Rakarska 18, tel: 01/2406835, 098/414113. 2.odabir: Komunalno redarstvo Zagreb: Jagićeva 31, tel: 01/610-1566"]
+        },
+        {
+            "tag": "Pakrac",
+            "patterns": ["Pakrac"],
+            "responses": ["1.odabir: Podatci komunalnog u Pakracu su: Trg bana J. Jelačića 18 , tel: 099/703 2148. 2.odabir: Sklonište Pakrac: Bučje bb, tel: 099/4411019"]
+        },
+        {
+            "tag": "Osijek",
+            "patterns": ["Osijek"],
+            "responses": ["Sklonište za nezbrinute životinje u Osijeku: Nemetinska cesta bb, tel: 095 8723087"]
+        },
+        {
+            "tag": "Split",
+            "patterns": ["Split"],
+            "responses": ["Sklonište za nezbrinute životinje u Splitu:  Ivana Pavla II. 47A, tel: 098/360908"]
+        },
+        {
+            "tag": "Cerje Pokupsko",
+            "patterns": ["Cerje Pokupsko"],
+            "responses": ["Sklonište za nezbrinute životinje Cerje Pokupsko: Cerje Pokupsko 29c, tel: 095/8300814, 01/6266176"]
+        },
+        {
+            "tag": "Crikvenica",
+            "patterns": ["Crikvenica"],
+            "responses": ["Sklonište za nezbrinute životinje Crikvenica: Kotorska 28, tel: 051/241 932"]
+        },
+        {
+            "tag": "Našice",
+            "patterns": ["Našice"],
+            "responses": ["Sklonište za nezbrinute životinje Našice: Našice, Istarska 23, tel: 098/642209"]
+        },
+        {
+            "tag": "Normanci",
+            "patterns": ["Normanci"],
+            "responses": ["Sklonište za nezbrinute životinje Normanci: Normanci, Kolodvorska 39, tel: 031/504836"]
+        },
+        {
+            "tag": "Konjščina",
+            "patterns": ["Konjščina"],
+            "responses": ["Sklonište za nezbrinute životinje Konjščina:Selnica bb, tel: 091/3300573, 091/5677481 "]
+        },
+        {
+            "tag": "Rijeka",
+            "patterns": ["Rijeka"],
+            "responses": ["Sklonište za nezbrinute životinje Rijeka: Lič bb, tel: 051/320263, 051/320139"]
+        },
+        {
+            "tag": "Koprivnica",
+            "patterns": ["Koprivnica"],
+            "responses": ["Sklonište za nezbrinute životinje Koprivnica: Hrešinska bb, tel: 048/621114, 048/621800, Starogradska 1, tel: 098/439837, 048/220670"]
+        },
+        {
+            "tag": "Zadar",
+            "patterns": ["Zadar"],
+            "responses": ["Sklonište za nezbrinute životinje Zadar: Busje bb, tel: 091/9066930"]
+        },
+        {
+            "tag": "Mihovljan",
+            "patterns": ["Mihovljan"],
+            "responses": ["Sklonište za nezbrinute životinje Mihovljan: Tome Bratkovića bb, tel: 091/8988004"]
+        },
+        {
+            "tag": "Bjelovar",
+            "patterns": ["Bjelovar"],
+            "responses": ["Sklonište za nezbrinute životinje: Bjelovar: Letičani 5, tel: 060/860860"]
+        },
+        {
+            "tag": "Karlovac",
+            "patterns": ["Karlovac"],
+            "responses": ["Sklonište za nezbrinute životinje Karlovac: Utinja 12, tel: 098/1896999, 047/654461"]
+        },
+        {
+            "tag": "Semeljci",
+            "patterns": ["Semeljci"],
+            "responses": ["Sklonište za nezbrinute životinje Semeljci: Kolodvorska 2, tel: 031/856310"]
+        },
+        {
+            "tag": "Varaždin",
+            "patterns": ["Varaždin"],
+            "responses": ["Sklonište za nezbrinute životinje Varaždin: Mali prelog bb, tel: 042/330004"]
+        },
+        {
+            "tag": "Nemetin",
+            "patterns": ["Nemetin"],
+            "responses": ["Sklonište za nezbrinute životinje Nemetin: Nemetin 171 a, tel: 095/8723087"]
+        },
+        {
+            "tag": "Donja Bistra",
+            "patterns": ["Donja bistra"],
+            "responses": ["Sklonište za nezbrinute životinje Donja Bistra: Krapinska 11, tel: 098/521803"]
+        },
+        {
+            "tag": "Pazin",
+            "patterns": ["Pazin"],
+            "responses": ["Sklonište za nezbrinute životinje Pazin: Dubravica 5, tel: 091/2539457, 052/621826 "]
+        },
+        {
+            "tag": "Pula",
+            "patterns": ["Pula"],
+            "responses": ["Sklonište za nezbrinute životinje Pula: Premanturska cesta bb, tel: 098/855066"]
+        },
+        {
+            "tag": "Šibenik",
+            "patterns": ["Šibenik"],
+            "responses": ["Sklonište za nezbrinute životinje Šibenik: Dolačka 2, tel: 022/340372, 022/340371"]
+        },
+        {
+            "tag": "Vinkovci",
+            "patterns": ["Vinkovci"],
+            "responses": ["Sklonište za nezbrinute životinje Vinkovci: J.Lovretića 10, tel: 032/306901"]
+        },
+        {
+            "tag": "Rovinj",
+            "patterns": ["Rovinj"],
+            "responses": ["Sklonište za nezbrinute životinje Rovinj: Zagrebačka 5, tel: 091/2017529"]
+        },
+        {
+            "tag": "Velika Gorica",
+            "patterns": ["Velika Gorica"],
+            "responses": ["Sklonište za nezbrinute životinje Velika Gorica: Jagodno 113A, tel: 095/4000234"]
+        },
+        {
+            "tag": "Virovitica",
+            "patterns": ["Virovitica"],
+            "responses": ["Sklonište za nezbrinute životinje Virovitica: Matije Gupca 63, tel: 091/6202900"]
+        },
+        {
+            "tag": "Slavonski Brod",
+            "patterns": ["Slavonski Brod"],
+            "responses": ["Sklonište za nezbrinute životinje Slavonski Brod: Stjepana pl. Horvata 38, 099/3115877, 035/4512011"]
+        }
+
+    ]
+}

@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_chat import message
 from evaluate import evaluate
+from helpers import load_intents, get_lables
 
 #chatbot apppearance
 st.set_page_config(
@@ -19,7 +20,22 @@ st.sidebar.text("To start the conversation,\nsimply write in your input\nand bot
 
 st.header("Yoko-Bot")
 
-#st.button("Zagreb")
+intents= load_intents()
+labels = get_lables(intents)
+labels = labels[5:] #starts with index 5 in intent jason
+
+labels_fives= []
+labels_temp= []
+for label in labels:
+    if len(labels_temp) < 5:
+        labels_temp.append(label)
+      
+        if label==labels[-1]:
+            labels_fives.append(labels_temp)
+    else:
+        labels_fives.append(labels_temp)
+        labels_temp = [label]
+
 
 #code
 if 'generated' not in st.session_state:
@@ -35,8 +51,23 @@ def query(user_input):
 def get_text():
     return st.text_input("Start your conversation : ", key="input",value="", max_chars=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder=None, disabled=False)
 
+def create_city_buttons(city_names= []):
+    col1, col2, col3,col4, col5 = st.columns([1,1,1,1,1])
+    columns= {"col0":col1, "col1": col2, "col2":col3, "col3": col4, "col4":col5}
+    for i,label in enumerate(city_names):
+        with columns["col"+str(i)]:
+            create_city_button(city_names[i]) 
 
 
+def create_city_button(city_name):
+    if st.button(city_name, key= city_name):
+        output = query(city_name)
+
+        st.session_state.past.append(city_name)
+        st.session_state.generated.append(output)
+
+for labels_five in labels_fives:
+    create_city_buttons(labels_five)
 
 if user_input := get_text():
     output = query(user_input)
